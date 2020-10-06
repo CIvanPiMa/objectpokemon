@@ -15,9 +15,7 @@ class Pokemon(BasePokemon):
         return "Chocolob"
 
     def choose_move(self, enemy):
-        mov = self.moves[self.move]
-        self.move = self.move + 1 if self.move < len(self.moves) - 1 else 0
-        return self.get_move_by_name(mov)
+        return self.get_move_by_name("Echatelo")
 
 
 class Echatelo(BaseMove):
@@ -27,7 +25,7 @@ class Echatelo(BaseMove):
         self.set_type(Type.EARTH)
 
     def get_name(self):
-        return "le avento tierra"
+        return "Echatelo"
 
 
 class Cachetada(BaseMove):
@@ -37,4 +35,4 @@ class Cachetada(BaseMove):
         self.set_type(Type.NORMAL)
 
     def get_name(self):
-        return "le dijo criada"
+        return "Cachetada"
